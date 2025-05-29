@@ -14,10 +14,10 @@
       
       
       
-        <link rel="prev" href="../learn/multi-format-reader.html">
+        <link rel="prev" href="definitions.html">
       
       
-        <link rel="next" href="cli-api.html">
+        <link rel="next" href="built-in-readers.html">
       
       
       <link rel="icon" href="../assets/favicon.png">
@@ -25,7 +25,7 @@
     
     
       
-        <title>NeXus definitions - Documentation</title>
+        <title>API for command line tools - Documentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nexus-definitions" class="md-skip">
+        <a href="#api-for-command-line-tools" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NeXus definitions
+              API for command line tools
             
           </span>
         </div>
@@ -839,6 +839,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="definitions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NeXus definitions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -851,31 +874,20 @@
         
       
       
-      <a href="definitions.html" class="md-nav__link md-nav__link--active">
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   
   <span class="md-ellipsis">
-    NeXus definitions
+    API for command line tools
     
   </span>
   
 
-      </a>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="cli-api.html" class="md-nav__link">
+      <a href="cli-api.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -886,6 +898,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data conversion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data conversion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter" class="md-nav__link">
+    <span class="md-ellipsis">
+      dataconverter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="dataconverter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter-convert" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter-generate-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      generate-template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter-get-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      get-readers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nexus-file-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      NeXus file validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NeXus file validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read_nexus" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_nexus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eln-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ELN generation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ELN generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate_eln" class="md-nav__link">
+    <span class="md-ellipsis">
+      generate_eln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -964,6 +1101,119 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data conversion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data conversion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter" class="md-nav__link">
+    <span class="md-ellipsis">
+      dataconverter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="dataconverter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter-convert" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter-generate-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      generate-template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataconverter-get-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      get-readers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nexus-file-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      NeXus file validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NeXus file validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read_nexus" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_nexus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eln-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ELN generation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ELN generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate_eln" class="md-nav__link">
+    <span class="md-ellipsis">
+      generate_eln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -978,18 +1228,309 @@
 
 
 
-<h1 id="nexus-definitions">NeXus definitions<a class="headerlink" href="#nexus-definitions" title="Permanent link">&para;</a></h1>
-<p>We link two references here.
-The first links to the official definitions by the <a href="http://www.nexusformat.org">NIAC</a> and the second one links to latest FAIRmat definitions.</p>
+<h1 id="api-for-command-line-tools">API for command line tools<a class="headerlink" href="#api-for-command-line-tools" title="Permanent link">&para;</a></h1>
+<p><code>pynxtools</code> supports a number of command line applications. This page provides documentation for their current API.</p>
+<h2 id="data-conversion">Data conversion<a class="headerlink" href="#data-conversion" title="Permanent link">&para;</a></h2>
+<p>Note that simply calling <code>dataconverter</code> defaults to <code>dataconverter convert</code>.</p>
+<h3 id="dataconverter">dataconverter<a class="headerlink" href="#dataconverter" title="Permanent link">&para;</a></h3>
+<p><strong>Usage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>dataconverter [OPTIONS] COMMAND [ARGS]...
+</code></pre></div>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code></td>
+<td>boolean</td>
+<td>Show this message and exit.</td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Subcommands</strong></p>
 <ul>
-<li><a href="https://manual.nexusformat.org/classes/index.html">Official NIAC definitions</a></li>
-<li><a href="https://fairmat-nfdi.github.io/nexus_definitions/">Latest FAIRmat definitions</a></li>
+<li><em><a href="#dataconverter-convert">convert</a></em>: This command allows you to use the converter functionality of the dataconverter.</li>
+<li><em><a href="#dataconverter-generate-template">generate-template</a></em>: Generates and prints a template to use for your nxdl.</li>
+<li><em><a href="#dataconverter-get-readers">get-readers</a></em>: Prints a list of all installed readers.</li>
 </ul>
-<p>The FAIRmat definitions are regularly contributed to NIAC (around every 6 months), but generally reflect
-a state which is still under development and may contain new or improved application definitions or base classes.
-Consider it as the public review stage of these application definitions.
-However, there might be some parts which are still under discussion and will be subject to change.</p>
-<p>Note: To connect NeXus concepts with semantic web tools, efforts are underway to represent them using the <a href="https://www.w3.org/OWL/">W3C Web Ontology Language (OWL)</a>. See the <a href="https://github.com/FAIRmat-NFDI/NeXusOntology">NeXusOntology</a> for more details.</p>
+<h4 id="dataconverter-convert">dataconverter convert<a class="headerlink" href="#dataconverter-convert" title="Permanent link">&para;</a></h4>
+<p>This command allows you to use the converter functionality of the dataconverter.</p>
+<p><strong>Usage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>dataconverter convert [OPTIONS] [FILES]...
+</code></pre></div>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--input-file</code></td>
+<td>text</td>
+<td>Deprecated: Please use the positional file arguments instead. The path to the input data file to read. Repeat for more than one file. default=[] This option is required if no '--params-file' is supplied.</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>--reader</code></td>
+<td>choice (<code>example</code> &#x7C; <code>json_map</code> &#x7C; <code>json_yml</code> &#x7C; <code>multi</code>)</td>
+<td>The reader to use. Examples are json_map or readers from a pynxtools plugin. default='json_map' This option is required if no '--params-file' is supplied.</td>
+<td><code>json_map</code></td>
+</tr>
+<tr>
+<td><code>--nxdl</code></td>
+<td>text</td>
+<td>The name of the NeXus application definition file to use without the extension nxdl.xml. This option is required if no '--params-file' is supplied.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--output</code></td>
+<td>text</td>
+<td>The path to the output NeXus file to be generated. default='output.nxs'</td>
+<td><code>output.nxs</code></td>
+</tr>
+<tr>
+<td><code>--params-file</code></td>
+<td>filename</td>
+<td>Allows to pass a .yaml file with all the parameters the converter supports.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--ignore-undocumented</code></td>
+<td>boolean</td>
+<td>Ignore all undocumented fields during validation.</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>--fail</code></td>
+<td>boolean</td>
+<td>Fail conversion and don't create an output file if the validation fails.</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>--skip-verify</code></td>
+<td>boolean</td>
+<td>Skips the verification routine during conversion.</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>--mapping</code></td>
+<td>text</td>
+<td>Takes a <name>.mapping.json file and converts data from given input files.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>-c</code>, <code>--config</code></td>
+<td>file</td>
+<td>A json config file for the reader</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>boolean</td>
+<td>Show this message and exit.</td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dataconverter-generate-template">dataconverter generate-template<a class="headerlink" href="#dataconverter-generate-template" title="Permanent link">&para;</a></h4>
+<p>Generates and prints a template to use for your nxdl.</p>
+<p><strong>Usage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>dataconverter generate-template [OPTIONS]
+</code></pre></div>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--nxdl</code></td>
+<td>text</td>
+<td>The name of the NeXus application definition file to use without extension. For example: NXmpes</td>
+<td>_required</td>
+</tr>
+<tr>
+<td><code>--required</code></td>
+<td>boolean</td>
+<td>Use this flag to only get the required template.</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>--pythonic</code></td>
+<td>boolean</td>
+<td>Prints a valid Python dictionary instead of JSON</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>--output</code></td>
+<td>path</td>
+<td>Writes the output into the filepath provided.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>boolean</td>
+<td>Show this message and exit.</td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dataconverter-get-readers">dataconverter get-readers<a class="headerlink" href="#dataconverter-get-readers" title="Permanent link">&para;</a></h4>
+<p>Prints a list of all installed readers.</p>
+<p><strong>Usage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>dataconverter get-readers [OPTIONS]
+</code></pre></div>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code></td>
+<td>boolean</td>
+<td>Show this message and exit.</td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="nexus-file-validation">NeXus file validation<a class="headerlink" href="#nexus-file-validation" title="Permanent link">&para;</a></h2>
+<!-- ::: mkdocs-click
+    :module: "pynxtools.dataconverter.verify
+    :command: verify_nexus
+    :prog_name: verify_nexus
+    :depth: 1
+    :style: table
+    :list_subcommands: True -->
+
+<h3 id="read_nexus">read_nexus<a class="headerlink" href="#read_nexus" title="Permanent link">&para;</a></h3>
+<p>Functionality to extract documentation and concept definition
+information about the individual parts of a NeXus/HDF5 file.</p>
+<p><strong>Usage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>read_nexus [OPTIONS]
+</code></pre></div>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-f</code>, <code>--nexus-file</code></td>
+<td>text</td>
+<td>NeXus file with extension .nxs.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>-d</code>, <code>--documentation</code></td>
+<td>text</td>
+<td>Definition path in nexus output (.nxs) file. Returns debug log relevant with that definition path. Example: /entry/data/delays</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>-c</code>, <code>--concept</code></td>
+<td>text</td>
+<td>Concept path from application definition file (.nxdl,xml). Finds out all the available concept definition (IS-A realation) for rendered concept path. Example: /NXarpes/ENTRY/INSTRUMENT/analyser</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>boolean</td>
+<td>Show this message and exit.</td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: Only one option from (<code>-d</code> and <code>-c</code>) is acceptable.</p>
+<h2 id="eln-generation">ELN generation<a class="headerlink" href="#eln-generation" title="Permanent link">&para;</a></h2>
+<h3 id="generate_eln">generate_eln<a class="headerlink" href="#generate_eln" title="Permanent link">&para;</a></h3>
+<p>Helper tool for generating ELN files in YAML format.</p>
+<p><strong>Usage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>generate_eln [OPTIONS]
+</code></pre></div>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--nxdl</code></td>
+<td>text</td>
+<td>Name of NeXus definition without extension (.nxdl.xml).</td>
+<td>_required</td>
+</tr>
+<tr>
+<td><code>--skip-top-levels</code></td>
+<td>integer</td>
+<td>To skip the level of parent hierarchy level. For example, by default the part Entry[ENTRY] from /Entry[ENTRY]/Instrument[INSTRUMENT]/... will be skiped.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>--output-file</code></td>
+<td>text</td>
+<td>Name of file that is needed to generated output file.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--eln-type</code></td>
+<td>choice (<code>reader</code> &#x7C; <code>schema</code>)</td>
+<td>Choose a type of ELN output (reader or schema).</td>
+<td><code>eln</code></td>
+</tr>
+<tr>
+<td><code>--optionality</code></td>
+<td>choice (<code>required</code> &#x7C; <code>recommended</code> &#x7C; <code>optional</code>)</td>
+<td>Level of requiredness to generate. If any of ('required', 'recommended', 'optional', only those concepts matching this requiredness level are created.</td>
+<td><code>required</code></td>
+</tr>
+<tr>
+<td><code>--filter-file</code></td>
+<td>text</td>
+<td>JSON configuration file to filter NeXus concepts (based on the presence of the '@eln' keyword). This is a positive filter, i.e., all concepts in the filter file will be included in the ELN.</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>boolean</td>
+<td>Show this message and exit.</td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1019,7 +1560,7 @@ However, there might be some parts which are still under discussion and will be 
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../learn/multi-format-reader.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: The MultiFormatReader as a reader superclass">
+          <a href="definitions.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: NeXus definitions">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1029,20 +1570,20 @@ However, there might be some parts which are still under discussion and will be 
                 Previous
               </span>
               <div class="md-ellipsis">
-                The MultiFormatReader as a reader superclass
+                NeXus definitions
               </div>
             </div>
           </a>
         
         
           
-          <a href="cli-api.html" class="md-footer__link md-footer__link--next" aria-label="Next: API for command line tools">
+          <a href="built-in-readers.html" class="md-footer__link md-footer__link--next" aria-label="Next: Built-in readers">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                API for command line tools
+                Built-in readers
               </div>
             </div>
             <div class="md-footer__button md-icon">

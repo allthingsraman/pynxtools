@@ -14,10 +14,6 @@
       
       
       
-        <link rel="prev" href="../learn/multi-format-reader.html">
-      
-      
-        <link rel="next" href="cli-api.html">
       
       
       <link rel="icon" href="../assets/favicon.png">
@@ -25,7 +21,7 @@
     
     
       
-        <title>NeXus definitions - Documentation</title>
+        <title>Running pynxtools Tests in Parallel - Documentation</title>
       
     
     
@@ -77,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nexus-definitions" class="md-skip">
+        <a href="#running-pynxtools-tests-in-parallel" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NeXus definitions
+              Running pynxtools Tests in Parallel
             
           </span>
         </div>
@@ -336,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/writing-an-appdef.html" class="md-nav__link">
+      <a href="writing-an-appdef.html" class="md-nav__link">
         
   
   
@@ -359,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/using-multiple-appdefs.html" class="md-nav__link">
+      <a href="using-multiple-appdefs.html" class="md-nav__link">
         
   
   
@@ -382,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/transformations.html" class="md-nav__link">
+      <a href="transformations.html" class="md-nav__link">
         
   
   
@@ -405,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/build-a-plugin.html" class="md-nav__link">
+      <a href="build-a-plugin.html" class="md-nav__link">
         
   
   
@@ -428,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/use-multi-format-reader.html" class="md-nav__link">
+      <a href="use-multi-format-reader.html" class="md-nav__link">
         
   
   
@@ -451,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/using-pynxtools-test-framework.html" class="md-nav__link">
+      <a href="using-pynxtools-test-framework.html" class="md-nav__link">
         
   
   
@@ -474,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/create-nexus-files-by-python.html" class="md-nav__link">
+      <a href="create-nexus-files-by-python.html" class="md-nav__link">
         
   
   
@@ -497,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-tos/validate-nexus-file.html" class="md-nav__link">
+      <a href="validate-nexus-file.html" class="md-nav__link">
         
   
   
@@ -799,20 +795,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -828,7 +822,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Reference
@@ -839,19 +833,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="definitions.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../reference/definitions.html" class="md-nav__link">
         
   
   
@@ -862,7 +847,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -875,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli-api.html" class="md-nav__link">
+      <a href="../reference/cli-api.html" class="md-nav__link">
         
   
   
@@ -898,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="built-in-readers.html" class="md-nav__link">
+      <a href="../reference/built-in-readers.html" class="md-nav__link">
         
   
   
@@ -921,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="plugins.html" class="md-nav__link">
+      <a href="../reference/plugins.html" class="md-nav__link">
         
   
   
@@ -964,6 +948,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#running-tests-sequentially" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Tests Sequentially
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-tests-in-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Tests in Parallel
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -978,18 +988,21 @@
 
 
 
-<h1 id="nexus-definitions">NeXus definitions<a class="headerlink" href="#nexus-definitions" title="Permanent link">&para;</a></h1>
-<p>We link two references here.
-The first links to the official definitions by the <a href="http://www.nexusformat.org">NIAC</a> and the second one links to latest FAIRmat definitions.</p>
-<ul>
-<li><a href="https://manual.nexusformat.org/classes/index.html">Official NIAC definitions</a></li>
-<li><a href="https://fairmat-nfdi.github.io/nexus_definitions/">Latest FAIRmat definitions</a></li>
-</ul>
-<p>The FAIRmat definitions are regularly contributed to NIAC (around every 6 months), but generally reflect
-a state which is still under development and may contain new or improved application definitions or base classes.
-Consider it as the public review stage of these application definitions.
-However, there might be some parts which are still under discussion and will be subject to change.</p>
-<p>Note: To connect NeXus concepts with semantic web tools, efforts are underway to represent them using the <a href="https://www.w3.org/OWL/">W3C Web Ontology Language (OWL)</a>. See the <a href="https://github.com/FAIRmat-NFDI/NeXusOntology">NeXusOntology</a> for more details.</p>
+<h1 id="running-pynxtools-tests-in-parallel">Running <code>pynxtools</code> Tests in Parallel<a class="headerlink" href="#running-pynxtools-tests-in-parallel" title="Permanent link">&para;</a></h1>
+<p>The <code>pytest</code> framework allows tests to run in sequential and parallel using third-party plugins such as <a href="https://pytest-xdist.readthedocs.io/en/stable/"><code>pytest-xdist</code></a>. In our <code>pytest</code> setup for <code>pynxtools</code>, we use <code>pytest-xdist</code> to execute tests in parallel. To handle shared resources among multiple tests, tests are grouped using the <code>@pytest.mark.xdist_group</code> fixture. This prevents classic race conditions by ensuring that tests sharing the same resources are executed sequentially.</p>
+<h2 id="running-tests-sequentially">Running Tests Sequentially<a class="headerlink" href="#running-tests-sequentially" title="Permanent link">&para;</a></h2>
+<p>In a local setup, tests can be run sequentially using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests
+</code></pre></div>
+<p>This will execute all tests in a sequential manner. For more details, refer to the official documentation: <a href="https://docs.pytest.org/en/stable/how-to/usage.html">How to invoke pytest</a>.</p>
+<h2 id="running-tests-in-parallel">Running Tests in Parallel<a class="headerlink" href="#running-tests-in-parallel" title="Permanent link">&para;</a></h2>
+<p>The <code>pytest-xdist</code> plugin can be used to speed up test execution by distributing tests among available workers. To prevent race conditions, tests that share the same resources are grouped using the <code>@pytest.mark.xdist_group(name="group_name")</code> fixture. These grouped tests must be run with the <code>--dist loadgroup</code> flag. For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests<span class="w"> </span>-n<span class="w"> </span>auto<span class="w"> </span>--dist<span class="w"> </span>loadgroup
+</code></pre></div>
+<p>Here:
+- The <code>-n auto</code> flag tells <code>pytest</code> to automatically distribute tests among all available workers.
+- The <code>--dist loadgroup</code> flag ensures that tests marked with the same @pytest.mark.xdist_group(name="...") are executed serially.</p>
+<p>This setup allows for efficient parallel test execution while maintaining the integrity of tests that depend on shared resources.</p>
 
 
 
@@ -1014,44 +1027,6 @@ However, there might be some parts which are still under discussion and will be 
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../learn/multi-format-reader.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: The MultiFormatReader as a reader superclass">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                The MultiFormatReader as a reader superclass
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="cli-api.html" class="md-footer__link md-footer__link--next" aria-label="Next: API for command line tools">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                API for command line tools
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
